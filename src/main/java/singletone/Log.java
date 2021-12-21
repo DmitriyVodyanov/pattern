@@ -14,14 +14,14 @@ public class Log {
     }
 
     public void printLog(Object ob) {
-        System.out.printf("log info: %s \n", ob.getClass().getName().toString());
+        System.out.printf("log info: %s \n", ob.getClass().getSimpleName());
     }
 
     public void printLog(Object obOne, Object obTwo) {
-        System.out.printf("log info: %s, %s \n", obOne.getClass().getName().toString(), obTwo.getClass().getName().toString());
+        System.out.printf("log info: %s, %s \n", obOne.getClass().getSimpleName(), obTwo.getClass().getSimpleName());
     }
 
     public void printLog(Object ob, String message) {
-        System.out.printf("log info: %s, %s \n", ob.getClass().getName().toString(), message);
+        System.out.printf("log info: %s, %s \n", ob.getClass().getSimpleName(), message);
     }
 }
